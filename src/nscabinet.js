@@ -155,7 +155,7 @@ function url(path, params) {
 
 function _requestOpts (params) {
     var nlauthRolePortion = ( params.role ) ? `,nlauth_role=${params.role}` : '',
-        server = process.env.NS_SERVER || `https://${params.baseUrl}/app/site/hosting/restlet.nl`;
+        server = process.env.NS_SERVER || `https://${params.realm}/app/site/hosting/restlet.nl`;
     //NS_SERVER = testing + nsmockup
 
     var options = {
@@ -174,11 +174,11 @@ function _requestOpts (params) {
             token: params.token,
             token_secret: params.tokenSecret,
             realm: params.account
-        }
+        };
     } else {
         options.headers = {
             authorization: `NLAuth nlauth_account=${params.account},nlauth_email=${params.email},nlauth_signature=${params.password}${nlauthRolePortion}`
-        }
+        };
     }
 
     return options;
