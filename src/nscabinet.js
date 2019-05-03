@@ -155,7 +155,7 @@ function url(path, params) {
 
 function _requestOpts (params) {
     var nlauthRolePortion = ( params.role ) ? `,nlauth_role=${params.role}` : '',
-        server = process.env.NS_SERVER || `https://rest.${params.realm}/app/site/hosting/restlet.nl`;
+        server = process.env.NS_SERVER || `https://${params.baseUrl}/app/site/hosting/restlet.nl`;
     //NS_SERVER = testing + nsmockup
 
     var options = {
