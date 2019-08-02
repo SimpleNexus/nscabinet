@@ -20,7 +20,7 @@
     "cabinet"
   ],
   "dependencies": {
-    "nsconfig": "SimpleNexus/nsconfig",
+    "nsconfig": "git+https://github.com/SimpleNexus/nsconfig.git",
     "request": "^2.64.0",
     "through2": "^2.0.0",
     "vinyl": "^1.0.0",
