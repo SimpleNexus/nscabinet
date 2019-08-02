@@ -12,19 +12,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/suiteplus/nscabinet.git"
+    "url": "git+https://github.com/SimpleNexus/nscabinet.git"
   },
   "keywords": [
     "netsuite",
     "suitescript",
     "cabinet"
   ],
-  "author": "Suiteplus",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/suiteplus/nscabinet/issues"
-  },
-  "homepage": "https://github.com/suiteplus/nscabinet#readme",
   "dependencies": {
     "nsconfig": "SimpleNexus/nsconfig",
     "request": "^2.64.0",
